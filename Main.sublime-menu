@@ -1,0 +1,17 @@
+[
+	{
+		"caption": "Edit",
+		"id": "edit",
+		"children":
+		[
+			{
+				"caption": "Comment",
+				"id": "comment",
+				"children":
+				[
+					{ "command": "file_header_window", "caption": "Add File Header", "mnemonic": "H" }
+				]
+			}
+		]
+	}
+]

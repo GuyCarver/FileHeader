@@ -25,6 +25,13 @@ def HeaderFile(  ) :
 
   return filePath
 
+class FileHeaderWindowCommand( sublime_plugin.WindowCommand ) :
+  """Add file header information to the active view using a Menu Command"""
+  def run( self ) :
+    vw = self.window.active_view()
+    if not vw.is_scratch() :
+      vw.run_command("file_header")
+
 class FileHeaderCommand( sublime_plugin.TextCommand ) :
   """Add copyright/info text to beginning of file."""
 
