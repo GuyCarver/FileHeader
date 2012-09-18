@@ -90,6 +90,7 @@ class FileHeaderCommand( sublime_plugin.TextCommand ) :
 
   def ReplaceDate( self ) :
     vw = self.view
+    #May want to change this range to be more flexible.
     for i in range(2, 16) :
       lp = vw.text_point(i, 0)
       lr = vw.line(lp)
@@ -103,10 +104,15 @@ class FileHeaderCommand( sublime_plugin.TextCommand ) :
         break
 
   def HasHeader( self ) :
+    #This may be temporary.  Need to use a comment range perhaps?
     vw = self.view
-    lp = vw.text_point(1, 0)
-    lr = vw.line(lp)
-    lt = vw.substr(lr)
+    lp0 = vw.text_point(0, 0)
+    lp1 = vw.text_point(21, 0)
+    lr0 = vw.line(lp0)
+    lr1 = vw.line(lp1)
+    hr = sublime.Region(lr0.a, lr1.b)
+    lt = vw.substr(hr)
+#    print "testing" + lt
     return (lt.find("Copyright") != -1)
 
   def run( self, edit, file="FileHeader.txt" ) :
@@ -115,10 +121,11 @@ class FileHeaderCommand( sublime_plugin.TextCommand ) :
     try:
       #Look for file header.
       if self.HasHeader() :
-        #print "Replacing Date"
+        # print "Replacing Date"
         self.ReplaceDate()
       else:
         # If it doesn't exist then load header from file, set date/time and add it.
+        # print "Adding header"
         self.AddHeader()
     finally:
       self.view.end_edit(self.edit)
