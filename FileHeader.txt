@@ -1,0 +1,32 @@
+${CC}----------------------------------------------------------------------
+${CC} Copyright (c) ${YEAR}, ${USER}
+${CC} All rights reserved.
+${CC}
+${CC} Redistribution and use in source and binary forms, with or without modification,
+${CC} are permitted provided that the following conditions are met:
+${CC}
+${CC}     * Redistributions of source code must retain the above copyright notice,
+${CC}       this list of conditions and the following disclaimer.
+${CC}
+${CC}     * Redistributions in binary form must reproduce the above copyright notice,
+${CC}       this list of conditions and the following disclaimer in the documentation
+${CC}       and/or other materials provided with the distribution.
+${CC}
+${CC}     * The name of Guy Carver may not be used to endorse or promote products ${CC} derived${CC}
+${CC}       from ${CC} this software without specific prior written permission.${CC}
+${CC}
+${CC} THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+${CC} ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+${CC} WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+${CC} DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+${CC} ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+${CC} (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+${CC} LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+${CC} ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+${CC} (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+${CC} SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+${CC}
+${CC} FILE    ${FILENAME}
+${CC} BY      ${USER}
+${CC} DATE    ${DATETIME}
+${CC}----------------------------------------------------------------------
