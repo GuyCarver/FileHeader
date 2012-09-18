@@ -16,12 +16,12 @@ def Date(  ) :
 
 def DateTime(  ) :
   t = datetime.datetime.now()
-  return(t.strftime("%d/%m/%Y %I:%M %p"))
+  return(t.strftime("%m/%d/%Y %I:%M %p"))
 
-def HeaderFile(  ) :
-  filePath = os.path.join(sublime.packages_path(), "User/FileHeader.txt")
+def HeaderFile( aFile ) :
+  filePath = os.path.join(sublime.packages_path(), "User", aFile)
   if not os.access(filePath, os.R_OK) :
-    filePath = os.path.join(sublime.packages_path(), "FileHeader/FileHeader.txt")
+    filePath = os.path.join(sublime.packages_path(), "FileHeader", aFile)
 
   return filePath
 
@@ -60,7 +60,7 @@ class FileHeaderCommand( sublime_plugin.TextCommand ) :
     return c
 
   def Do_AddHeader( self ) :
-    filePath = HeaderFile()
+    filePath = HeaderFile(self.file)
     hf = open(filePath)
     if hf :
       contents = hf.read()
@@ -109,7 +109,8 @@ class FileHeaderCommand( sublime_plugin.TextCommand ) :
     lt = vw.substr(lr)
     return (lt.find("Copyright") != -1)
 
-  def run( self, edit ) :
+  def run( self, edit, file="FileHeader.txt" ) :
+    self.file = file
     self.edit = self.view.begin_edit('FileHeader')
     try:
       #Look for file header.
