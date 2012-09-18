@@ -100,14 +100,14 @@ class FileHeaderCommand( sublime_plugin.TextCommand ) :
     lp = vw.text_point(1, 0)
     lr = vw.line(lp)
     lt = vw.substr(lr)
-    return (lt.find("ZENIMAX") != -1)
+    return (lt.find("Copyright") != -1)
 
   def run( self, edit ) :
     self.edit = self.view.begin_edit('FileHeader')
     try:
       #Look for file header.
       if self.HasHeader() :
-        print "Replacint Date"
+        #print "Replacing Date"
         self.ReplaceDate()
       else:
         # If it doesn't exist then load header from file, set date/time and add it.
