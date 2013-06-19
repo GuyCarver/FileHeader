@@ -1,4 +1,4 @@
-# Sublime Text 2 FileHeader Package to add copyright info to the top of the file.
+# Sublime Text FileHeader Package to add copyright info to the top of the file.
 
 ## Install
 
