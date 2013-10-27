@@ -1,3 +1,3 @@
 [
-	{ "keys": ["super+shift+h"], "command": "file_header" }
+	{ "keys": ["super+k, "h"], "command": "file_header" }
 ]

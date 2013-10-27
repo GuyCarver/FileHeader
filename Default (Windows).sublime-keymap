@@ -1,3 +1,5 @@
 [
+	{ "keys": ["ctrl+k", "ctrl+h"], "command": "file_header" },
+	{ "keys": ["ctrl+k", "h"], "command": "file_header", "args": {"file": "FileHeaderC.txt" } },
 	{ "keys": ["ctrl+shift+h"], "command": "file_header" }
 ]

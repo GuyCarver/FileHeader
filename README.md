@@ -12,4 +12,4 @@
 
 ### Key Bindings:
 
-* ctrl+shift+h will add the header to the current view.  If the header already exists the year will be updated.
+* ctrl+k h will add the header to the current view.  If the header already exists the year will be updated.
