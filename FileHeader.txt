@@ -12,8 +12,8 @@ ${CC}     * Redistributions in binary form must reproduce the above copyright no
 ${CC}       this list of conditions and the following disclaimer in the documentation
 ${CC}       and/or other materials provided with the distribution.
 ${CC}
-${CC}     * The name of Guy Carver may not be used to endorse or promote products ${CC} derived${CC}
-${CC}       from ${CC} this software without specific prior written permission.${CC}
+${CC}     * The name of Guy Carver may not be used to endorse or promote products derived
+${CC}       from this software without specific prior written permission.
 ${CC}
 ${CC} THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ${CC} ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
